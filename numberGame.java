@@ -8,17 +8,17 @@ public class numberGame{
     int numOfRounds=0;
     System.out.println("Lets Start the number guessing game!!");
     while(true){
-      int numToGuess=random.nextInt(100)+1;
+      int numToGuess=ra.nextInt(100)+1;
       int attempts=0;
       int maximumAttempts=10;
       boolean guessedCorrectly=false;
-      System.out.println("I have selected a number btw 1-100.you have "+ maximumAttemts +" attempts to guess the correct number. All the best!"):
+      System.out.println("I have selected a number btw 1-100.you have "+ maximumAttempts +" attempts to guess the correct number. All the best!");
       while(attempts<maximumAttempts){
         System.out.print("Enter your Guess: ");
         int userGuess=sc.nextInt();
         attempts++;
-        if(userGuess==numToGuess{
-           System.out.println("Congratulations you have Guessed the correct number in "+attempts+"attempts.");
+        if(userGuess==numToGuess){
+           System.out.println("Congratulations you have Guessed the correct number in "+ attempts +"attempts.");
            guessedCorrectly=true;
            score+=(maximumAttempts-attempts+1);
            break;
